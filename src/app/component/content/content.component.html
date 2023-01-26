@@ -1,0 +1,11 @@
+<h2>ESTUDIANTES</h2>
+<div class="card" style="width: 18rem;" *ngFor="let estudiante of listaEstudiantes" >
+  <div class="card-body" [style.border]="variableTitulo == 3 ? '2px solid green' : '2px solid red'" >
+    <h5 class="card-title">{{estudiante.nombre}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <p class="card-text">Edad: {{estudiante.edad}}</p>
+    <p class="card-text">Curso: {{estudiante.cursando}}</p>
+    <p class="card-text" >Estado: {{estudiante.alumnoregular ? 'Regular' : 'No Regular'}} </p>
+
+  </div>
+</div>
